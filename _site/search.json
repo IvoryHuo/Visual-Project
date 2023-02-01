@@ -11,7 +11,7 @@
     "href": "Overview/Project_Proposal.html",
     "title": "Group Project Proposal",
     "section": "",
-    "text": "While millions of people in Singapore use public transport system to satisfy their daily needs, the trips they made provide us with enormous amount of commuters' data which include information on origin, destination, time, distance and location. We can gain insights on commuters' behaviours and travelling patterns by analysing these information. However, few research has been done using these data. Appropriate data analysis can support policy analytics where development plans and decisions are made. Therefore, there is a practical and necessary need to interpret these trips' information and turn the data into statistical results which can reveal the key factors affecting the patterns of commuting flows. In this study, we will focus Singapore bus commuting data and explore the data about the trips at bus stop level and information of bus stops and subzones, then perform proper modelling analysis using Gravity Model and Linear Mixed Model. The ability to analyse commuters' origins and destinations and when the trips are made will help the government and urban planners to have an integrated view of the flows of people and which factors influence the patterns of commuting most. These insights can provide references when planners design bus routes or make budgets."
+    "text": "While millions of people in Singapore use public transport system to satisfy their daily needs, the trips they made provide us with enormous amount of commuters’ data which include information on origin, destination, time, distance and location. We can gain insights on commuters’ behaviours and travelling patterns by analysing these information. However, few research has been done using these data. Appropriate data analysis can support policy analytics where development plans and decisions are made. Therefore, there is a practical and necessary need to interpret these trips’ information and turn the data into statistical results which can reveal the key factors affecting the patterns of commuting flows. In this study, we will focus Singapore bus commuting data and explore the data about the trips at bus stop level and information of bus stops and subzones, then perform proper modelling analysis using Gravity Model and Linear Mixed Model. The ability to analyse commuters’ origins and destinations and when the trips are made will help the government and urban planners to have an integrated view of the flows of people and which factors influence the patterns of commuting most. These insights can provide references when planners design bus routes or make budgets."
   },
   {
     "objectID": "Overview/Project_Proposal.html#storyboard",
@@ -26,5 +26,12 @@
     "title": "Visual-Project",
     "section": "",
     "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "Overview/Team.html#consultant",
+    "href": "Overview/Team.html#consultant",
+    "title": "Team",
+    "section": "Consultant",
+    "text": "Consultant"
   }
 ]

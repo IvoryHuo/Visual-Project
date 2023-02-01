@@ -9,6 +9,7 @@ website:
         - text: "Project Proposal"
           href: "Overview/Project_Proposal.html"
         - text: "Team"
+          href: "Overview/Team.html"
           
     
     - text: "Application"
