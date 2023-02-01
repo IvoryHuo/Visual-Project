@@ -25,7 +25,7 @@ In this project, we investigate the data on bus commuters' trips and use models 
 
 The datasets used in this project were provided at LTA Data Mall. For this project, we obtained the passenger commuting data in one month, i.e. January 2022. In total trips dataset, approximately 85 million trips' information made on bus were collected. Each trip's information describes its original bus stop, destination bus stop, passenger's entry timestamp (in hour) and whether on weekdays or weekends/holidays.
 
-Moreover, we have three other datasets contain the information of each bus stop, each subzone, and the distance between each subzone.
+Moreover, we have 3 other datasets contain the information of each bus stop, each subzone, and the distance between each subzone.
 
 In bus stop dataset, we are interested in which subzone it belongs to, and the geo-spatial location(longitude and latitude) of each bus stop.
 
