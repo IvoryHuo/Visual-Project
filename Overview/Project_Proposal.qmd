@@ -47,6 +47,8 @@ Number of Commuters
 
 ### Regression Analysis
 
+### Clustering
+
 ### Data
 
 # R packages
