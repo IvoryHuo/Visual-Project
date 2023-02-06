@@ -37,17 +37,28 @@ In distance dataset, we have the distance between each subzone in matrix.
 
 ## Storyboard
 
-The dashboard will be split into 4 sections, where the users are recommended to go through the sections sequentially. \### EDA
+The dashboard will be split into 4 sections, where the users are recommended to go through the sections sequentially. 
+### EDA
+Animation to show the variations of the total number of trips taken at different periods for selected regions.
+A trellis below the animation is to summarise the total number of trips taken place from Monday to Sunday for the selected regions.
+
+
+Ridge plots will be used to show the changes in the the distribution of total number of trips over time and place.
+
 
 ### ESDA
 
-Number of Trips
+Number of Trips over time and place
 
-Number of Commuters
+Number of Commuters flows over time and place
 
 ### Regression Analysis
+Build regression models to reveal the key factors affecting the patterns of commuting flows
 
 ### Clustering
+Hierachical Clustering of planning area or subzones
+
+Geospatial Constarined Clustering of planning area or subzones
 
 ### Data
 
@@ -56,4 +67,3 @@ Number of Commuters
 # Project Milestones
 
 # References
-- Aish
