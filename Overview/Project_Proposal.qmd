@@ -23,9 +23,9 @@ In this project, we investigate the data on bus commuters' trips and use models 
 
 # Data Description
 
-The datasets used in this project were provided at LTA Data Mall. For this project, we obtained the passenger commuting data in one month, i.e. January 2022. In total trips dataset, approximately 85 million trips' information made on bus were collected. Each trip's information describes its original bus stop, destination bus stop, passenger's entry timestamp (in hour) and whether on weekdays or weekends/holidays.
+The datasets used in this project were provided at LTA Data Mall. For this project, we obtained the passenger commuting data in 3 month, i.e. Oct 2022 to Dec 2022. In total trips dataset, approximately _____ trips' information made on bus were collected. Each trip's information describes its original bus stop, destination bus stop, passenger's entry timestamp (in hour) and whether on weekdays or weekends/holidays.
 
-Moreover, we have 3 other datasets contain the information of each bus stop, each subzone, and the distance between each subzone.
+Moreover, we have 5 other datasets contain the information of each bus stop, each subzone, each planning area, each region of Singapore as well as the distance between each subzone.
 
 In bus stop dataset, we are interested in which subzone it belongs to, and the geo-spatial location(longitude and latitude) of each bus stop.
 
@@ -37,7 +37,7 @@ In distance dataset, we have the distance between each subzone in matrix.
 
 ## Storyboard
 
-The dashboard will be split into 4 sections, where the users are recommended to go through the sections sequentially. 
+The dashboard will be split into 5 sections, where the users are recommended to go through the sections sequentially. 
 ### EDA
 Animation to show the variations of the total number of trips taken at different periods for selected regions.
 A trellis below the animation is to summarise the total number of trips taken place from Monday to Sunday for the selected regions.
