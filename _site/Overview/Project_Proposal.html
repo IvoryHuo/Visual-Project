@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Aish/HuoDa/Prachi">
+<meta name="dcterms.date" content="2023-01-28">
 
-<title>Project Proposal</title>
+<title>Visual Analytics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -115,30 +117,184 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#project-background" id="toc-project-background" class="nav-link active" data-scroll-target="#project-background">Project Background</a></li>
+  <li><a href="#motivation" id="toc-motivation" class="nav-link" data-scroll-target="#motivation">Motivation</a></li>
+  <li><a href="#objective" id="toc-objective" class="nav-link" data-scroll-target="#objective">Objective</a></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
+  <li><a href="#methodology-dashboard-design" id="toc-methodology-dashboard-design" class="nav-link" data-scroll-target="#methodology-dashboard-design">Methodology – Dashboard Design</a></li>
+  <li><a href="#r-packages" id="toc-r-packages" class="nav-link" data-scroll-target="#r-packages">R Packages</a></li>
+  <li><a href="#milestones" id="toc-milestones" class="nav-link" data-scroll-target="#milestones">Milestones</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Project Proposal</h1>
+<h1 class="title">Visual Analytics</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Aish/HuoDa/Prachi </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 28, 2023</p>
+    </div>
+  </div>
   
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">February 11, 2023</p>
+    </div>
+  </div>
     
   </div>
   
 
 </header>
 
+<section id="project-background" class="level2">
+<h2 class="anchored" data-anchor-id="project-background">Project Background</h2>
+<p>While millions of people in Singapore use public transport system to satisfy their daily needs, the trips they made provide us with enormous amount of commuters’ data which include information on origin, destination, time, distance and location. We can gain insights on commuters’ behaviours and travelling patterns by analysing these information. However, few research has been done using these data. Appropriate data analysis can support policy analytics where development plans and decisions are made. Therefore, there is a practical and necessary need to interpret these trips’ information and turn the data into statistical results which can reveal the key factors affecting the patterns of commuting flows. In this study, we will focus Singapore bus commuting data and explore the data about the trips at bus stop level and information of bus stops and subzones, then perform proper modelling analysis using Gravity Model and Linear Mixed Model. The ability to analyse commuters’ origins and destinations and when the trips are made will help the government and urban planners to have an integrated view of the flows of people and which factors influence the patterns of commuting most. These insights can provide references when planners design bus routes or make budgets.</p>
+</section>
+<section id="motivation" class="level2">
+<h2 class="anchored" data-anchor-id="motivation">Motivation</h2>
+<p>In Singapore, about 70% of the population travel around the city by bus or rail every day. The public transportation system provides services to commuters’ various routes (Chua &amp; Wang, 2020). The different routes of trips made can indicate the patterns of commuting flow and human activities during various time intervals. The analysis of commuters’ trips can help government and urban planners to gain insights of the distribution of commuters’ flows and activities. These insights will help the government with making political decisions on transportation development plans. The process of gaining insights from public data and making political decisions is part of policy analytics.</p>
+<p>The digital age has allowed us to have access to large amounts of data. With EZ-Link cards tapping in and out, we can collect the origin and destination information of commuters. By analysing this information, the government does not make decisions on intuition, but considers the participation of the public and communities (Meinard et al., 2021). This analysis tries to extract useful and appropriate analysis results from messy raw data and figure out the patterns of commuters’ flows.</p>
+<p>In this project, we investigate the data on bus commuters’ trips and use models to identify a series of key properties that provide a conceptual view for factors that affect the commuters’ flows. When we analyse the information of trips, the trip’s origin, destination, and time allow us to determine the route of actual journey and deduce the purposes of the trip, such as whether it is made between two subzones or within a single subzone, during morning peak or evening peak, on weekdays or weekend. We show how the factors affecting trips are obtained and how they can be effective in policy analytics applications. The in-depth analysis would clarify the political decisions making process and highlight the key areas that we need to pay attention to.</p>
+</section>
+<section id="objective" class="level2">
+<h2 class="anchored" data-anchor-id="objective">Objective</h2>
+</section>
+<section id="data" class="level2">
+<h2 class="anchored" data-anchor-id="data">Data</h2>
+<p>The <a href="https://drive.google.com/drive/folders/1pEsy5ATAW61p7MZLz6g7WVz86w9hU4_r">datasets</a> used in this project were provided at LTA Data Mall. For this project, we obtained the passenger commuting data in 3 month, i.e.&nbsp;Oct 2022 to Dec 2022. Each trip’s information describes its original bus stop, destination bus stop, passenger’s entry timestamp (in hour) and whether on weekdays or weekends/holidays. An example of Oct 2022 passenger bus commuting data is as shown.</p>
+<p><img src="images/trip dataset.jpg" class="img-fluid"></p>
+<p>Moreover, we have 5 other datasets contain the information of each bus stop, each subzone, each planning area, each region of Singapore as well as the distance between each subzone.</p>
+<p>In bus stop dataset, we are interested in which subzone it belongs to, and the geo-spatial location(longitude and latitude) of each bus stop.</p>
+<p>In subzone dataset, we are interested in subzone area and its land-use description such as residential, commercial, business, and etc, and the geo-spatial location of each subzone.</p>
+<p>In distance dataset, we have the distance between each subzone in matrix.</p>
+</section>
+<section id="methodology-dashboard-design" class="level2">
+<h2 class="anchored" data-anchor-id="methodology-dashboard-design">Methodology – Dashboard Design</h2>
+<p>The dashboard will be split into 5 sections, where the users are recommended to go through the sections sequentially.</p>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">EDA</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">ESDA</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Regression</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false">Clustering</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false">Data</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+
+</div>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+
+</div>
+<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
+
+</div>
+</div>
+</div>
+</section>
+<section id="r-packages" class="level2">
+<h2 class="anchored" data-anchor-id="r-packages">R Packages</h2>
+<table class="table">
+<thead>
+<tr class="header">
+<th>R Packages</th>
+<th>Brief description</th>
+<th>More information</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>tidyverse</td>
+<td>The tidyverse designed for Data Science. It helps with importing, wrangling, programming and modelling of data</td>
+<td><a href="https://www.tidyverse.org/" class="uri">https://www.tidyverse.org/</a></td>
+</tr>
+<tr class="even">
+<td>stplanr</td>
+<td>stplanr is a package for sustainable transport planning with R.</td>
+<td><a href="https://cran.r-project.org/web/packages/stplanr/vignettes/stplanr-paper.html" class="uri">https://cran.r-project.org/web/packages/stplanr/vignettes/stplanr-paper.html</a></td>
+</tr>
+<tr class="odd">
+<td>shiny</td>
+<td>Enables interactivity in data and analysis in R</td>
+<td><a href="https://shiny.rstudio.com/" class="uri">https://shiny.rstudio.com/</a></td>
+</tr>
+<tr class="even">
+<td>ggplot2</td>
+<td>EDA and data visualisation</td>
+<td><a href="https://ggplot2.tidyverse.org/reference/" class="uri">https://ggplot2.tidyverse.org/reference/</a></td>
+</tr>
+<tr class="odd">
+<td>ggridge</td>
+<td>To visualise changes in distribution over time and space</td>
+<td><a href="https://cran.r-project.org/web/packages/ggridges/vignettes/introduction.html" class="uri">https://cran.r-project.org/web/packages/ggridges/vignettes/introduction.html</a></td>
+</tr>
+<tr class="even">
+<td>gganimate</td>
+<td>Enable animations in graphs</td>
+<td><a href="https://cran.r-project.org/web/packages/gganimate/gganimate.pdf" class="uri">https://cran.r-project.org/web/packages/gganimate/gganimate.pdf</a></td>
+</tr>
+<tr class="odd">
+<td>plotly</td>
+<td>Create interactive plots in R</td>
+<td><a href="https://plotly.com/r/" class="uri">https://plotly.com/r/</a></td>
+</tr>
+<tr class="even">
+<td>gtsummary</td>
+<td>Save regression model in table form</td>
+<td><a href="https://www.danieldsjoberg.com/gtsummary/" class="uri">https://www.danieldsjoberg.com/gtsummary/</a></td>
+</tr>
+<tr class="odd">
+<td>rgdal</td>
+<td>Spatial data handling</td>
+<td><a href="https://cran.r-project.org/web/packages/rgdal/rgdal.pdf" class="uri">https://cran.r-project.org/web/packages/rgdal/rgdal.pdf</a></td>
+</tr>
+<tr class="even">
+<td>sf</td>
+<td>Encode spatial vector data</td>
+<td><a href="https://cran.r-project.org/web/packages/sf/sf.pdf" class="uri">https://cran.r-project.org/web/packages/sf/sf.pdf</a></td>
+</tr>
+<tr class="odd">
+<td>cluster</td>
+<td>Cluster analysis in R</td>
+<td><a href="https://cran.r-project.org/web/packages/cluster/cluster.pdf" class="uri">https://cran.r-project.org/web/packages/cluster/cluster.pdf</a></td>
+</tr>
+<tr class="even">
+<td>ClustGeo</td>
+<td>Creates ward-like hierarchical clustering algorithm including spatial/geographical constraints</td>
+<td><a href="https://cran.r-project.org/web/packages/ClustGeo/ClustGeo.pdf" class="uri">https://cran.r-project.org/web/packages/ClustGeo/ClustGeo.pdf</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="milestones" class="level2">
+<h2 class="anchored" data-anchor-id="milestones">Milestones</h2>
+<p><img src="images/milestone.jpg" class="img-fluid"></p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
