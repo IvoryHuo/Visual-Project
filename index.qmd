@@ -3,3 +3,5 @@ title: "Visual Analytics"
 ---
 
 Welcome to **Singapore Bus Commuting Pattern** homepage.
+
+![](images/1.jpg)
