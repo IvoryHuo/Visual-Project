@@ -25,7 +25,9 @@ The [datasets](https://drive.google.com/drive/folders/1pEsy5ATAW61p7MZLz6g7WVz86
 
 ![](images/trip%20dataset.jpg)
 
-Moreover, we have 5 other datasets contain the information of each bus stop, each subzone, each planning area, each region of Singapore as well as the distance between each subzone.
+Moreover, we have 5 other datasets contain the information of each bus stop, each subzone, each planning area, each region of Singapore as well as the distance between each subzone. Four of the data sets are spatial data sets.
+
+![SG bus stop locations](images/1.jpg)
 
 In bus stop dataset, we are interested in which subzone it belongs to, and the geo-spatial location(longitude and latitude) of each bus stop.
 
