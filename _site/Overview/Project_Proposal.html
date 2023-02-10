@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Aish, Huo Da, Prachi">
-<meta name="dcterms.date" content="2023-02-01">
 
-<title>Group Project Proposal</title>
+<title>project_proposal</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -117,121 +115,15 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#project-description" id="toc-project-description" class="nav-link active" data-scroll-target="#project-description">Project Description</a></li>
-  <li><a href="#motivation" id="toc-motivation" class="nav-link" data-scroll-target="#motivation">Motivation</a></li>
-  <li><a href="#objective" id="toc-objective" class="nav-link" data-scroll-target="#objective">Objective</a></li>
-  <li><a href="#analytically-approach" id="toc-analytically-approach" class="nav-link" data-scroll-target="#analytically-approach">Analytically Approach</a></li>
-  <li><a href="#data-description" id="toc-data-description" class="nav-link" data-scroll-target="#data-description">Data Description</a></li>
-  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">Methodology</a>
-  <ul class="collapse">
-  <li><a href="#storyboard" id="toc-storyboard" class="nav-link" data-scroll-target="#storyboard">Storyboard</a>
-  <ul class="collapse">
-  <li><a href="#esda" id="toc-esda" class="nav-link" data-scroll-target="#esda">ESDA</a></li>
-  <li><a href="#regression-analysis" id="toc-regression-analysis" class="nav-link" data-scroll-target="#regression-analysis">Regression Analysis</a></li>
-  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
-  </ul></li>
-  </ul></li>
-  <li><a href="#r-packages" id="toc-r-packages" class="nav-link" data-scroll-target="#r-packages">R packages</a></li>
-  <li><a href="#project-milestones" id="toc-project-milestones" class="nav-link" data-scroll-target="#project-milestones">Project Milestones</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Group Project Proposal</h1>
-</div>
 
 
 
-<div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Aish, Huo Da, Prachi </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">February 1, 2023</p>
-    </div>
-  </div>
-  
-    <div>
-    <div class="quarto-title-meta-heading">Modified</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date-modified">Invalid Date</p>
-    </div>
-  </div>
-    
-  </div>
-  
-
-</header>
-
-<section id="project-description" class="level1">
-<h1>Project Description</h1>
-<p>While millions of people in Singapore use public transport system to satisfy their daily needs, the trips they made provide us with enormous amount of commuters’ data which include information on origin, destination, time, distance and location. We can gain insights on commuters’ behaviours and travelling patterns by analysing these information. However, few research has been done using these data. Appropriate data analysis can support policy analytics where development plans and decisions are made. Therefore, there is a practical and necessary need to interpret these trips’ information and turn the data into statistical results which can reveal the key factors affecting the patterns of commuting flows. In this study, we will focus Singapore bus commuting data and explore the data about the trips at bus stop level and information of bus stops and subzones, then perform proper modelling analysis using Gravity Model and Linear Mixed Model. The ability to analyse commuters’ origins and destinations and when the trips are made will help the government and urban planners to have an integrated view of the flows of people and which factors influence the patterns of commuting most. These insights can provide references when planners design bus routes or make budgets.</p>
-</section>
-<section id="motivation" class="level1">
-<h1>Motivation</h1>
-<p>In Singapore, about 70% of the population travel around the city by bus or rail every day. The public transportation system provides services to commuters’ various routes (Chua &amp; Wang, 2020). The different routes of trips made can indicate the patterns of commuting flow and human activities during various time intervals. The analysis of commuters’ trips can help government and urban planners to gain insights of the distribution of commuters’ flows and activities. These insights will help the government with making political decisions on transportation development plans. The process of gaining insights from public data and making political decisions is part of policy analytics.</p>
-<p>The digital age has allowed us to have access to large amounts of data. With EZ-Link cards tapping in and out, we can collect the origin and destination information of commuters. By analysing this information, the government does not make decisions on intuition, but considers the participation of the public and communities (Meinard et al., 2021). This analysis tries to extract useful and appropriate analysis results from messy raw data and figure out the patterns of commuters’ flows.</p>
-<p>In this project, we investigate the data on bus commuters’ trips and use models to identify a series of key properties that provide a conceptual view for factors that affect the commuters’ flows. When we analyse the information of trips, the trip’s origin, destination, and time allow us to determine the route of actual journey and deduce the purposes of the trip, such as whether it is made between two subzones or within a single subzone, during morning peak or evening peak, on weekdays or weekend. We show how the factors affecting trips are obtained and how they can be effective in policy analytics applications. The in-depth analysis would clarify the political decisions making process and highlight the key areas that we need to pay attention to.</p>
-</section>
-<section id="objective" class="level1">
-<h1>Objective</h1>
-</section>
-<section id="analytically-approach" class="level1">
-<h1>Analytically Approach</h1>
-</section>
-<section id="data-description" class="level1">
-<h1>Data Description</h1>
-<p>The datasets used in this project were provided at LTA Data Mall. For this project, we obtained the passenger commuting data in one month, i.e.&nbsp;January 2022. In total trips dataset, approximately 85 million trips’ information made on bus were collected. Each trip’s information describes its original bus stop, destination bus stop, passenger’s entry timestamp (in hour) and whether on weekdays or weekends/holidays.</p>
-<p>Moreover, we have 3 other datasets contain the information of each bus stop, each subzone, and the distance between each subzone.</p>
-<p>In bus stop dataset, we are interested in which subzone it belongs to, and the geo-spatial location(longitude and latitude) of each bus stop.</p>
-<p>In subzone dataset, we are interested in subzone area and its land-use description such as residential, commercial, business, and etc, and the geo-spatial location of each subzone.</p>
-<p>In distance dataset, we have the distance between each subzone in matrix.</p>
-</section>
-<section id="methodology" class="level1">
-<h1>Methodology</h1>
-<section id="storyboard" class="level2">
-<h2 class="anchored" data-anchor-id="storyboard">Storyboard</h2>
-<p>The dashboard will be split into 4 sections, where the users are recommended to go through the sections sequentially. ### EDA</p>
-<section id="esda" class="level3">
-<h3 class="anchored" data-anchor-id="esda">ESDA</h3>
-<p>Number of Trips</p>
-<p>Number of Commuters</p>
-</section>
-<section id="regression-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="regression-analysis">Regression Analysis</h3>
-</section>
-<section id="data" class="level3">
-<h3 class="anchored" data-anchor-id="data">Data</h3>
-</section>
-</section>
-</section>
-<section id="r-packages" class="level1">
-<h1>R packages</h1>
-</section>
-<section id="project-milestones" class="level1">
-<h1>Project Milestones</h1>
-</section>
-<section id="references" class="level1">
-<h1>References</h1>
-
-
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
