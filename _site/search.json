@@ -11,7 +11,7 @@
     "href": "Overview/Project_Proposal.html",
     "title": "Visual Analytics",
     "section": "",
-    "text": "While millions of people in Singapore use public transport system to satisfy their daily needs, the trips they made provide us with enormous amount of commuters’ data which include information on origin, destination, time, distance and location. We can gain insights on commuters’ behaviours and travelling patterns by analysing these information. However, few research has been done using these data. Appropriate data analysis can support policy analytics where development plans and decisions are made. Therefore, there is a practical and necessary need to interpret these trips’ information and turn the data into statistical results which can reveal the key factors affecting the patterns of commuting flows. In this study, we will focus Singapore bus commuting data and explore the data about the trips at bus stop level and information of bus stops and subzones, then perform proper modelling analysis using Gravity Model and Linear Mixed Model. The ability to analyse commuters’ origins and destinations and when the trips are made will help the government and urban planners to have an integrated view of the flows of people and which factors influence the patterns of commuting most. These insights can provide references when planners design bus routes or make budgets."
+    "text": "Public transport is an imperative part of an infrastructure as millions of people use public transport system for their daily commute. In Singapore, about 70% of the population use public transport (bus/MASS rapid transport/light-rail transit). The public transportation system provides services to commuters’ various routes (Chua & Wang, 2020). The trips they make provide us with enormous amount of commuting data points of interest including information on origin, destination, time of travel, distance travelled, and location of travel. We can gain insights on commuters’ behaviours and travelling patterns by analysing such datapoints.\nIn this study, we will focus on Singapore public bus transport and explore the data about passenger volume through bus trips at bus stop, subzone, and planning area level. We plan to run various models such as Gravity Model, Linear Mixed Model, Regression, and Clustering. The insights generated on public commuting will allow us to have an integrated view of the flow of people in different subzones, the time of the trips, and the primary factors that most influence the patterns of commuting."
   },
   {
     "objectID": "Overview/Project_Proposal.html#storyboard",
@@ -39,14 +39,14 @@
     "href": "Overview/Project_Proposal.html#motivation",
     "title": "Visual Analytics",
     "section": "Motivation",
-    "text": "Motivation\nIn Singapore, about 70% of the population travel around the city by bus or rail every day. The public transportation system provides services to commuters’ various routes (Chua & Wang, 2020). The different routes of trips made can indicate the patterns of commuting flow and human activities during various time intervals. The analysis of commuters’ trips can help government and urban planners to gain insights of the distribution of commuters’ flows and activities. These insights will help the government with making political decisions on transportation development plans. The process of gaining insights from public data and making political decisions is part of policy analytics.\nThe digital age has allowed us to have access to large amounts of data. With EZ-Link cards tapping in and out, we can collect the origin and destination information of commuters. By analysing this information, the government does not make decisions on intuition, but considers the participation of the public and communities (Meinard et al., 2021). This analysis tries to extract useful and appropriate analysis results from messy raw data and figure out the patterns of commuters’ flows.\nIn this project, we investigate the data on bus commuters’ trips and use models to identify a series of key properties that provide a conceptual view for factors that affect the commuters’ flows. When we analyse the information of trips, the trip’s origin, destination, and time allow us to determine the route of actual journey and deduce the purposes of the trip, such as whether it is made between two subzones or within a single subzone, during morning peak or evening peak, on weekdays or weekend. We show how the factors affecting trips are obtained and how they can be effective in policy analytics applications. The in-depth analysis would clarify the political decisions making process and highlight the key areas that we need to pay attention to."
+    "text": "Motivation\nThe digital age has allowed us to have access to large amounts of data. With EZ-Link cards as well as credit and debit cards tapping in and out, we can collect the origin and destination information of commuters. By analysing this information, the relevant authorities can make decisions that are data-backed rather than intuition.\nThe availability of such data provides us with an opportunity to work on information that is current. By integrating geospatial data with aspatial information will allows us to run different models to gain insights on passenger flow patterns. However, little research has been conducted using public bus commute information of Singapore. Appropriate data analysis and insights can be pertinent for the Land Transport Authority (LTA) and urban planners to plan new bus routes, upgrade and maintain the existing ones, resolve logjams, and allocate budgets to carry out these tasks. Furthermore, these insights can also support policy formulation and decision making for development plans in the future. It is thus important and necessary to interpret information from these trips and turn the data into statistical insights that can reveal the key factors affecting the patterns of commuting flows."
   },
   {
     "objectID": "Overview/Project_Proposal.html#objective",
     "href": "Overview/Project_Proposal.html#objective",
     "title": "Visual Analytics",
     "section": "Objective",
-    "text": "Objective"
+    "text": "Objective\nThe project aims to deliver an R-Shiny app that provides:\n\nInteractive user interface design with multiple filter levels, allowing for a deep dive view\nGeospatial information interfaced with a visual map representation\nClustering techniques based on geospatial data\nTime series analysis using temporal data\nRegression models based on aspatial and geospatial data"
   },
   {
     "objectID": "Overview/Project_Proposal.html#data",
@@ -75,5 +75,26 @@
     "title": "Visual Analytics",
     "section": "Milestones",
     "text": "Milestones"
+  },
+  {
+    "objectID": "Overview/Project_Proposal.html#methodology",
+    "href": "Overview/Project_Proposal.html#methodology",
+    "title": "Visual Analytics",
+    "section": "Methodology",
+    "text": "Methodology\n\nAnalysis of passenger volume by bus dataset with background research\nExploratory Data Analysis (EDA) methods in R\nExploratory Spatial Data Analysis (ESDA) methods in R\nRegression methods for aspatial and geospatial information in R\nTime series analysis for temporal information in R\nClustering methods for aspatial and geospatial information in R\nQuarto development for functionality checks\nR-Shiny app development for user interactivity"
+  },
+  {
+    "objectID": "Overview/Project_Proposal.html#dashboard-design",
+    "href": "Overview/Project_Proposal.html#dashboard-design",
+    "title": "Visual Analytics",
+    "section": "Dashboard Design",
+    "text": "Dashboard Design\nThe dashboard will be split into 5 sections, where the users are recommended to go through the sections sequentially.\n\nEDAESDARegressionClusteringData"
+  },
+  {
+    "objectID": "Overview/Project_Proposal.html#reference",
+    "href": "Overview/Project_Proposal.html#reference",
+    "title": "Visual Analytics",
+    "section": "Reference",
+    "text": "Reference\n\nChua, A., & Wang, S. (21 April, 2020). Understanding Urban Activity and Mobility Patterns. Urban Development Authority.\nSamuel de Franca M. and Cira Souza P., “Applying Multivariate Geostatistics For Transit Ridership Modelling At The Bus Stop Level,” Bulletin of Geodetic Sciences. 27(2):e2021019, 2021\nAlita, D., Putra, A. D., & Darwis, D. (2021). Analysis of classic assumption test and multiple linear regression coefficient test for employee structural office recommendation. IJCCS (Indonesian Journal of Computing and Cybernetics Systems), 15(3)."
   }
 ]
