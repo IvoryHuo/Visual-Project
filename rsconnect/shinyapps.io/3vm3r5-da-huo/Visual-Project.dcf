@@ -1,0 +1,14 @@
+name: Visual-Project
+title: Visual-Project
+username:
+account: 3vm3r5-da-huo
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8540299
+bundleId: 6945007
+url: https://3vm3r5-da-huo.shinyapps.io/Visual-Project/
+when: 1678525045.9833
+lastSyncTime: 1678525045.98331
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .RData|_quarto.yml|demo.R|images/1.jpg|index.qmd|module/origin_destination_rds.R|module/raw_trip.R|Visual-Project.qmd|_site|index_files|Overview

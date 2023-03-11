@@ -14,8 +14,8 @@ website:
     
     - text: "Application"
       menu:
-      - text: "User Guide"
       - text: "Shiny Application"
+        href: "https://3vm3r5-da-huo.shinyapps.io/huoda-SGBusCommutingPattern/"
         
 
     
