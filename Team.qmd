@@ -2,16 +2,15 @@
 title: "Team"
 format: html
 editor: visual
+affiliation: "Singapore Management University MITB (Analytics)"
 ---
 
 ## Members
 
-Aish
+-   [AISHWARYA SANJAY MALOO](www.linkedin.com/in/aishwarya-maloo "linkedin")
 
-HuoDa
+-   [HuoDa](https://medium.com/@ivory_data "Medium")
 
-Prachi
+-   [PRACHI RAJENDRA ASHANI](www.linkedin.com/in/prachiashani)
 
-## Consultant
-
-Prof Kam
+## 

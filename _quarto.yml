@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "Singapore Bus Commute Pattern"
+  title: "SG Bus Commute Pattern"
   page-navigation: true
   
   navbar:
@@ -14,18 +14,19 @@ website:
     - text: "Application"
       href: "https://3vm3r5-da-huo.shinyapps.io/Visual-Project/?_ga=2.139833585.395284405.1680390288-1164590008.1680258801"
     - text: "Poster"
+      href: "Poster/VAA_Poster_Team1.pdf"
       
     
     right:
-    - text: "Team"
-      href: "Team.html"
-    - href: index.qmd
-      text: Home
+    - icon: github
+      href: "https://github.com/IvoryHuo/Visual-Project/tree/IvoryHuo-patch-1"
+    - text: "The Team" 
+      href: Team.qmd
 
 
 format:
   html:
-    theme: default
+    theme: Journal
     css: styles.css
     toc: true
 
