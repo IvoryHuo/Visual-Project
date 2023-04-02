@@ -88,13 +88,21 @@ legend("bottomright",legend = paste("c",1:8),fill = 1:8,border = 'white')
 
 
 #Geo spatial Clustering
-sg_sp <- as_Spatial(sg_1)
+#remove geospatial data with no neighbor
+appeared_sz <- unique(cluster_org$SUBZONE_N_ORI)
+appeared_sz
+
+sg <- inner_join(sg_1,cluster_org,by = c('SUBZONE_N'='SUBZONE_N_ORI'))
+cluster_org
+sg_11 <- sg_1[c(-36,-37,-38,-276,-298),]
+sg_sp <- as_Spatial(sg_11)
 sg_nb <- poly2nb(sg_sp)
 sg_nb
 
+df_org_spatial <- df_org_scaled[c(-36,-37,-38,-276,-298),]
+df_org_spatial
 
-
-
+lcosts <- nbcosts(sg_nb, df_org_spatial)
 
 
 

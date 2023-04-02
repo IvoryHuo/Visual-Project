@@ -5,9 +5,10 @@ account: 3vm3r5-da-huo
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 8540302
-bundleId: 7032654
+bundleId: 7037324
 url: https://3vm3r5-da-huo.shinyapps.io/huoda-SGBusCommutingPattern/
-when: 1680264467.28955
-lastSyncTime: 1680264467.28956
+when: 1680389922.69929
+lastSyncTime: 1680389922.69931
 asMultiple: FALSE
 asStatic: FALSE
+ignoredFiles: _quarto.yml|demo.R|images/1.jpg|index.qmd|module/clustering.R|module/geospatial_clustering.R|module/origin_destination_rds.R|module/raw_trip.R|Visual-Project.qmd|_site|index_files|Overview

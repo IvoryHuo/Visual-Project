@@ -1,0 +1,14 @@
+name: SGBusCommute
+title: SGBusCommute
+username:
+account: 3vm3r5-da-huo
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8741693
+bundleId: 7037442
+url: https://3vm3r5-da-huo.shinyapps.io/SGBusCommute/
+when: 1680393708.33028
+lastSyncTime: 1680393708.33029
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: _quarto.yml|demo.R|images/1.jpg|index.qmd|module/clustering.R|module/geospatial_clustering.R|module/origin_destination_rds.R|module/raw_trip.R|Visual-Project.qmd|_site|index_files|Overview
