@@ -1,9 +1,0 @@
----
-title: "Team"
-format: html
-editor: visual
----
-
-## Members
-
-## Consultant

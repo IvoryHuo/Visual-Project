@@ -2,27 +2,25 @@ project:
   type: website
 
 website:
+  title: "Singapore Bus Commute Pattern"
+  page-navigation: true
+  
   navbar:
     left:
     - text: "Overview"
-      menu: 
-        - text: "Project Proposal"
-          href: "Overview/Project_Proposal.html"
-        - text: "Team"
-          href: "Overview/Team.html"
-          
-    
+      href: "Overview/Project_Proposal.html"
+    - text: "User Guide"
+      href: "Userguide/VAA_Group1_UserGuide.pdf"
     - text: "Application"
-      menu:
-      - text: "Shiny Application"
-        href: "https://3vm3r5-da-huo.shinyapps.io/huoda-SGBusCommutingPattern/"
-        
-
-    
+      href: "https://3vm3r5-da-huo.shinyapps.io/Visual-Project/?_ga=2.139833585.395284405.1680390288-1164590008.1680258801"
+    - text: "Poster"
+      
     
     right:
-      - href: index.qmd
-        text: Home
+    - text: "Team"
+      href: "Team.html"
+    - href: index.qmd
+      text: Home
 
 
 format:
