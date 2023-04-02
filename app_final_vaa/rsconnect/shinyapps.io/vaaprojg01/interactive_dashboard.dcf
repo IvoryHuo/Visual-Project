@@ -1,0 +1,13 @@
+name: interactive_dashboard
+title:
+username:
+account: vaaprojg01
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8742265
+bundleId: 7037905
+url: https://vaaprojg01.shinyapps.io/interactive_dashboard/
+when: 1680410398.52626
+lastSyncTime: 1680410398.52627
+asMultiple: FALSE
+asStatic: FALSE
