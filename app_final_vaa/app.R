@@ -1,12 +1,11 @@
 #Load R Packages
 pacman::p_load(rgdal, spdep, tmap, sf, 
-ggpubr, cluster, factoextra, NbClust,
+ggpubr, cluster, factoextra, NbClust, jsonlite,
 heatmaply, corrplot,psych,
 Hmisc, knitr, kableExtra, ClustGeo, ggiraphExtra,
 plotly, ggstatsplot, tools,
 scales, extrafont, ggridges, gganimate, viridis, caret, gtsummary, gt,
-treemap,
-shiny, shinycssloaders, shinydashboard, shinythemes, tidyverse)
+treemap, shinycssloaders, shinydashboard, shinythemes, tidyverse)
 
 # Read rds data file
 #huoda original rds file
